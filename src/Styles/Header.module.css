@@ -1,0 +1,182 @@
+.navbar {
+    width: 100%;
+    height: 5.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(252, 252, 252);
+
+    display: grid;
+    grid-template-columns: 3rem 21rem auto 1.5rem;
+    align-items: center;
+    column-gap: 0.5rem;
+    z-index: 200;
+    overflow-x: hidden;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.resturentLogo {
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.resturentLogo a span {
+    color: rgb(63, 63, 63);
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}
+
+.navLink {
+    grid-column: 3/4;
+    margin: 0rem 5%;
+}
+
+.navLink .containerNavLink {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navLink .containerNavLink li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navLink .containerNavLink li a:hover {
+    color: rgb(100, 100, 100);
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.logoutBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.logoutBtn {
+    padding: 0.6rem 3rem;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgb(91, 91, 91);
+    border: 1px solid rgb(44, 203, 203);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 18px;
+}
+
+.logoutBtn:hover {
+    border: 1px solid white;
+    background-color: #4c4e4e;
+    color: rgb(44, 203, 203);
+    transform: scale(0.98);
+    transition: ease-in;
+}
+
+.hamburgetMenu {
+    grid-column: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.hamburgetMenu i {
+    border: 2px solid gray;
+    padding: 1rem 0.5rem;
+    border-radius: 0.6rem;
+    color: gray;
+}
+
+/* Media Query */
+@media (max-width: 1270px) {
+    .hamburgetMenu {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburgetMenu i {
+        color: gray;
+        cursor: pointer;
+    }
+
+    .hamburgetMenu i:hover {
+        color: rgb(67, 65, 65);
+        cursor: pointer;
+        border: 2px solid rgb(67, 65, 65);
+    }
+
+    .navbar {
+        grid-template-columns: 3rem 21rem auto 6rem;
+    }
+
+    .expenseTrackerLogo a span {
+        font-size: 1.6rem;
+    }
+
+    /* Slider Design Start*/
+    .navLink {
+        position: fixed;
+        top: 5.56rem;
+        margin-left: 0rem;
+        background-color: rgb(68, 66, 66);
+        min-width: 13rem;
+        height: 95vh;
+        padding: 2.34rem 4rem;
+        transform-origin: left;
+        /* transform: translateX(600%); */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-out;
+        border-radius: 0rem 0rem 1rem 0rem;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    .navLink .containerNavLink {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .navLink .containerNavLink li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .navLink .containerNavLink li a:hover {
+        text-decoration: none;
+        color: rgb(44, 203, 203);
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    .mobileNavbarLink {
+        /* transform: translateX(344%) */
+        transform: translateX(0%);
+        transition: transform 0.4s ease-out;
+    }
+
+    .logoutBtnDiv {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+    /* Slider Design End*/
+}

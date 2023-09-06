@@ -1,0 +1,130 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem 0;
+    margin-top: 10rem;
+    color: white;
+}
+
+.formControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: rgb(81, 80, 80);
+    border: 0.5px solid #0e7185;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px;
+}
+
+.fromTitle h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-bottom: 3px solid white;
+    border-radius: 0.5rem;
+    padding: 0rem 0.5rem;
+    padding-bottom: 0.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0.4rem 1rem;
+}
+
+.control label {
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.control input {
+    padding: 0.6rem 1rem;
+    text-align: center;
+    width: 25rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    color: #050a30;
+    border: 1px solid rgb(218, 213, 213);
+}
+.control p {
+    padding-top: 0.3rem;
+    font-weight: 400;
+}
+
+.control input:hover,
+.control input:focus {
+    background-color: #dbe0e1;
+    border: 2px solid rgb(170, 237, 241);
+}
+
+.action {
+    margin-top: 1.8rem;
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+}
+
+.action .loginBtn {
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    padding: 0.6rem 3rem;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgb(81, 80, 80);
+    border: 0.1px solid rgb(250, 251, 249);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 18px;
+}
+
+.action .loginBtn:hover {
+    background-color: rgb(62, 61, 61);
+    transform: scale(0.99);
+}
+
+.toggleDiv {
+    margin-top: -0.3rem;
+}
+
+.isLogginToggle {
+    cursor: pointer;
+    text-align: center;
+    width: 31rem;
+    padding: 1.2rem 0rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    color: white;
+    background-color: rgb(81, 80, 80);
+    border: 0.5px solid rgb(133, 231, 244);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px;
+}
+
+.isLogginToggle:hover {
+    color: white;
+}
+
+.forgetPassword {
+    cursor: pointer;
+    color: white;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    border-bottom: 1px solid white;
+    word-spacing: 0.1rem;
+}
